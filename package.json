@@ -1,0 +1,38 @@
+{
+  "name": "angularproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdpeck90/Angular-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdpeck90/Angular-Practice/issues"
+  },
+  "homepage": "https://github.com/jdpeck90/Angular-Practice#readme",
+  "dependencies": {
+    "@angular/common": "^7.2.4",
+    "@angular/compiler": "^7.2.4",
+    "@angular/compiler-cli": "^7.2.4",
+    "@angular/core": "^7.2.4",
+    "@angular/forms": "^7.2.4",
+    "@angular/http": "^7.2.4",
+    "@angular/platform-browser": "^7.2.4",
+    "@angular/platform-browser-dynamic": "^7.2.4",
+    "@angular/router": "^7.2.4",
+    "@angular/upgrade": "^7.2.4",
+    "angular2-in-memory-web-api": "0.0.21",
+    "bootstrap": "^4.2.1",
+    "core-js": "^2.6.3",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.4.0",
+    "systemjs": "^3.0.0",
+    "zone.js": "^0.8.29"
+  }
+}
