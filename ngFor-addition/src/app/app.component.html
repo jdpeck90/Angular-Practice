@@ -2,5 +2,15 @@
 <div style="text-align:center">
   <h1>Welcome to {{ title }}!</h1>
 </div>
-<button>Display Details</button>
-<p *ngIf="showSecrete"></p>
+<button (click)="onDisplaySecret()">Display Details</button>
+<p *ngIf="displaySecret">
+  Secret Paragraph, if you click the button I will toggle.
+</p>
+
+<div
+  *ngFor="let clickItem of clickArray; let i = index"
+  [ngStyle]="{ backgroundColor: i >= 4 ? 'blue' : 'transparent' }"
+  [ngClass]="{ 'white-copy': i >= 4 }"
+>
+  {{ clickItem }}
+</div>
