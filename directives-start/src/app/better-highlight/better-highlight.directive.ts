@@ -13,9 +13,9 @@ import {
 })
 export class BetterHighlightDirective implements OnInit {
   @Input() defaultColor: string = "yellow";
-  @Input() highlightColor: string = "blue";
-  @Input() defaultFontColor: string "black";
-  @Input() highlightFontColor: string "white";
+  @Input("appBetterHighlight") highlightColor: string = "blue";
+  @Input() defaultFontColor: string = "black";
+  @Input() highlightFontColor: string = "white";
   @HostBinding("style.backgroundColor") backgroundColor: string = this
     .defaultColor;
   @HostBinding("style.color") fontColor: string = this.defaultFontColor;
@@ -41,7 +41,7 @@ export class BetterHighlightDirective implements OnInit {
     //   false
     // );
     // this.backgroundColor = "blue";
-    this.color = this.highlightFontColor;
+    this.fontColor = this.highlightFontColor;
     this.backgroundColor = this.highlightColor;
   }
 
@@ -51,7 +51,7 @@ export class BetterHighlightDirective implements OnInit {
     //   "background-color",
     //   "transparent"
     // );
-    this.color = this.defaultFontColor;
+    this.fontColor = this.defaultFontColor;
     this.backgroundColor = this.defaultColor;
   }
 }
